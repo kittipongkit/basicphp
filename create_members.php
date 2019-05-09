@@ -19,6 +19,7 @@ if (!empty($_POST["submit"])) {
     $query = mysqli_query($connect, $sql);
     if ($query) {
         $msg = "<div class='alert alert-success'>Add member success</div>";
+        echo "<meta http-equiv=\"refresh\" content=\"3;url='read_members.php'\">";
     } else {
         $msg = "<div class='alert alert-danger'>Add member fail!!</div>";
     }
